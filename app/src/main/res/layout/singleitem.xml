@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This Layout will create for a single item View-->
+<!-- All Views are wrapped in a CardView -->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_view"
+    android:layout_margin="5dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp"
+    >
+
+    <!-- We relative Layout to place Views TOp/Bottom/Right/Left of each other -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+        <!--This Layout will create for a single item View -->
+        <!-- Item Image -->
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:layout_margin="2dp"
+            android:src="@drawable/food1" />
+
+        <!-- Item Title -->
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chips Masala"
+            android:textColor="#FF9800"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <!-- Item Details-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_detail"
+            android:text="Item Description"
+             />
+
+        <!-- Item Cost -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_cost"
+            android:text="3,000kES"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
